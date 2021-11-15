@@ -39,13 +39,12 @@
        function toogleActiveListImg() {
         let lis = Array.from(document.querySelectorAll('.list-item'));
         let imgLists = Array.from(document.querySelectorAll('.banner-img'));
+        let active_li = document.querySelector('.list-item.active');
+        let active_img = document.querySelector('.banner-img.dsp-block');
         let lis_count = lis.length;
         let active_li_index = 0;
         let active_img_idx = 0;
-        console.log(active_li_index);
         setInterval(function(){
-            var active_li = document.querySelector('.list-item.active');
-            var active_img = document.querySelector('.banner-img.dsp-block');
             if( lis.indexOf(active_li) == lis_count-1 ) {
               active_li_index  = 0;
               active_img_idx = 0;
