@@ -11,7 +11,6 @@
         display: flex;
         justify-content: space-around;
       }
-
       div > img {
         display: none;
       }
@@ -19,31 +18,11 @@
       .dsp-block {
         display: block;
       }
-      
+
     </style>
   </head>
   <body>
     <h1>Javascript console</h1>
-    <!-- <ul>
-  <li>1.  Lorem ipsum dolor sit amet.</li>
-  <li>2.  Lorem ipsum dolor sit amet.</li>
-  <li>3.  Lorem ipsum dolor sit amet.</li>
-  <li>4 . Lorem ipsum dolor sit amet.</li>
-  <li>5 . Lorem ipsum dolor sit amet.</li>
-  <li>6 . Lorem ipsum dolor sit amet.</li>
-  <li>7 . Lorem ipsum dolor sit amet.</li>
-  <li>8 . Lorem ipsum dolor sit amet.</li>
-  <li>9 . Lorem ipsum dolor sit amet.</li>
-  <li>10 . Lorem ipsum dolor sit amet.</li>
-  <li>11 . Lorem ipsum dolor sit amet.</li>
-  <li>12 . Lorem ipsum dolor sit amet.</li>
-  <li>13 . Lorem ipsum dolor sit amet.</li>
-  <li>14 . Lorem ipsum dolor sit amet.</li>
-  <li>15 . Lorem ipsum dolor sit amet.</li>
-  <li>16 . Lorem ipsum dolor sit amet.</li>
-  <li>17 . Lorem ipsum dolor sit amet.</li>
-  <li>18. Lorem ipsum dolor sit amet.</li>
-</ul> -->
     <div class="container">
       <ul>
         <li class="list-item active">Home</li>
@@ -56,10 +35,6 @@
         <img src="/sjoe.webp" alt="" width="400" height="280" class="banner-img" />
       </div>
     </div>
-
-    <!-- <button onclick="myFunc()">click</button> -->
-    <!-- <script src="main.js"></script> -->
-
     <script>
        function toogleActiveListImg() {
         let lis = Array.from(document.querySelectorAll('.list-item'));
@@ -86,7 +61,6 @@
             imgLists[active_img_idx].classList.add('dsp-block');
           }, 1000);
        }
-
       document.addEventListener('DOMContentLoaded', toogleActiveListImg);
     </script>
   </body>
